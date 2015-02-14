@@ -1,0 +1,36 @@
+---
+Name: core
+After: 'framework/*','cms/*', 'userforms/*'
+---
+# YAML configuration for SilverStripe
+# See http://doc.silverstripe.org/framework/en/topics/configuration
+# Caution: Indentation through two spaces, not tabs
+GDBackend:
+    default_quality: 80
+DataObject:
+  extensions:
+    - DataObjectDecorator
+SiteTree:
+  nested_urls: true
+  create_default_pages: false
+  # extensions:
+  #   - SiteTreeNavigation
+SiteConfig:
+  extensions:
+    - SiteConfigDecorator
+LeftAndMain:
+  extra_requirements_javascript:
+    - core/javascript/Core.Main.js
+  extra_requirements_css:
+    - core/css/screen.css
+ErrorPage:
+  extensions:
+    - ErrorPageDecorator
+RedirectorPage:
+  extensions:
+    - RedirectorPageDecorator
+UserDefinedForm:
+  extensions:
+    - UserDefinedFormDecorator
+VideoItem:
+  youtube_api_key: AIzaSyCZrRdfYrq5DBm06y8xR1nDUBYNcDTrv40

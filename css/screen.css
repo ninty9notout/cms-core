@@ -1,0 +1,4 @@
+/** -------------------------------------------- "Settings" Form -------------------------------------------- */
+#CanCommentType .optionset li { float: none; width: auto; white-space: nowrap; }
+
+#CommenterGroups select { width: 512px; }
